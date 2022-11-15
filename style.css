@@ -1,84 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Nunito+Sans:wght@200&family=Outfit&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Outfit:wght@600&display=swap');
 *{
-    padding:0;
     margin:0;
-
+    padding:0;
     box-sizing: border-box;
-  
-    font-family: 'Outfit', sans-serif;
 }
 body{
-    background-color: hsl(212, 45%, 89%);
-    font-size: 15px;
-    font-weight: bold;
-}
-
-article{
-    display:grid;
-    min-height: 100vh;
-  
-    
-    
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg);
+    Font-size: 18px;
+    color: hsl(227, 10%, 46%);
 }
 .card{
-    
-    align-items: center;
-    height:25rem;
-    width: 15rem;
-    background-color: hsl(0, 0%, 100%);
-    place-self: center;
 
+    position: fixed;
+   top: 50%;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%, -50%);
 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width:350px;
+    height:420px;
+    background-color: white;
+   
+    border-radius:10px;
 }
-.content{
-    align-items: center;
-    text-align:center;
-    margin:7px;
+.card .pattern img{
+    border-radius: 5px 5px 0 0 ;
+   
+}
+.card .avatar img{
+    
+    border-radius:50%;
+    position:absolute;
+    top:20%;
+    left:35%;
+    border: 5px solid white;
+
+  
+}
+.card .profile{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: 350px;
+    height:140px;
+    margin-top:50px;
+    
+}
+
+ul{
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:hsl(229, 23%, 23%);
+    margin:10px;
     padding:10px;
+ 
 
-
-}
-img{
-    margin:12px;
-    width:90%;
-    border-radius: 5px;
+   
+   
 }
 
-/*
-p,h1{
-    margin:0;   text-align: center;
-    background-color: hsl(0, 0%, 100%);
-    flex-wrap: nowrap;
-}*/
-p{
-   color: hsl(220, 15%, 55%);
-   font-family: 'Nunito Sans', sans-serif;
-   margin-top: 10px;
-   padding-top: 5px;
-   text-indent: -1em;
-
+h1{
+    color:hsl(229, 23%, 23%);
 }
-h3{
-   margin:0px;
-    color: hsl(218, 44%, 22%);
+hr{
+
+   color:hsl(227, 10%, 46%);
+
     
+}
+span{
+    font-size: 17px;
+    color:hsl(227, 10%, 46%);
+}
 
+@media only screen and (max-width: 1440px) and (max-width:375px) {
+    .card {
+display: flex; 
+flex-direction: column;
 
 
 }
-
-
-@media screen and(max-width: 1440px) and (max-width: 700px) {
- .card{
-    display: flex;
- }
-}
-
-
-
-
+  }
+  
 
